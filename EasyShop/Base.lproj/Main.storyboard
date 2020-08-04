@@ -133,17 +133,27 @@
                                 <rect key="frame" x="145" y="449" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="Save:" destination="wMe-rB-Zd7" eventType="touchUpInside" id="5A7-1J-Q0R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gua-pO-aqI">
                                 <rect key="frame" x="238" y="449" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="Cancel:" destination="wMe-rB-Zd7" eventType="touchUpInside" id="2Vt-g1-dSd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="awP-QE-ohX"/>
                     </view>
                     <navigationItem key="navigationItem" id="jpa-Ir-9e1"/>
+                    <connections>
+                        <outlet property="ItemName" destination="SRu-t2-Bcz" id="baP-uB-MbP"/>
+                        <outlet property="ItemQuantity" destination="WSS-Bt-mSj" id="I3Z-ag-bwj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBI-I2-yVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

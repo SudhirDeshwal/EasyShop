@@ -10,6 +10,7 @@
 		993BA98124D9459D004EF683 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98024D9459D004EF683 /* ListTableViewController.swift */; };
 		993BA98324D94BC8004EF683 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98224D94BC8004EF683 /* CategoryTableViewController.swift */; };
 		993BA98524D94C0A004EF683 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98424D94C0A004EF683 /* AddItemViewController.swift */; };
+		993BA98924D95618004EF683 /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98824D95618004EF683 /* CDManager.swift */; };
 		99FA3A5324D8F02600F47152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA3A5224D8F02600F47152 /* AppDelegate.swift */; };
 		99FA3A5524D8F02600F47152 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA3A5424D8F02600F47152 /* SceneDelegate.swift */; };
 		99FA3A5A24D8F02600F47152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99FA3A5824D8F02600F47152 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		993BA98024D9459D004EF683 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		993BA98224D94BC8004EF683 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		993BA98424D94C0A004EF683 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		993BA98824D95618004EF683 /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
 		99FA3A4F24D8F02600F47152 /* EasyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FA3A5224D8F02600F47152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99FA3A5424D8F02600F47152 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		993BA98724D9557F004EF683 /* Core Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				993BA98824D95618004EF683 /* CDManager.swift */,
+			);
+			path = "Core Data Manager";
+			sourceTree = "<group>";
+		};
 		99FA3A4624D8F02600F47152 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		99FA3A5124D8F02600F47152 /* EasyShop */ = {
 			isa = PBXGroup;
 			children = (
+				993BA98724D9557F004EF683 /* Core Data Manager */,
 				99FA3A5224D8F02600F47152 /* AppDelegate.swift */,
 				99FA3A5424D8F02600F47152 /* SceneDelegate.swift */,
 				99FA3A5824D8F02600F47152 /* Main.storyboard */,
@@ -271,6 +282,7 @@
 				99FA3A5D24D8F02600F47152 /* EasyShop.xcdatamodeld in Sources */,
 				99FA3A5324D8F02600F47152 /* AppDelegate.swift in Sources */,
 				993BA98324D94BC8004EF683 /* CategoryTableViewController.swift in Sources */,
+				993BA98924D95618004EF683 /* CDManager.swift in Sources */,
 				993BA98124D9459D004EF683 /* ListTableViewController.swift in Sources */,
 				99FA3A5524D8F02600F47152 /* SceneDelegate.swift in Sources */,
 				993BA98524D94C0A004EF683 /* AddItemViewController.swift in Sources */,
