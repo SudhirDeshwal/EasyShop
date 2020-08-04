@@ -38,7 +38,22 @@ class CDManager {
    
     //for filter in search bar
     
-
+     func SearchItem(name: String) -> [Item]{
+          let fetch: NSFetchRequest = Item.fetchRequest()
+          
+          let predicate = NSPredicate(format: "name BEGINSWITH[c] %@", name)
+          fetch.predicate = predicate
+          
+          var results = [Item]()
+          
+          do {
+              results = try persistentContainer.viewContext.fetch(fetch)
+          }catch {
+              print(error)
+          }
+          return results
+      }
+    
     lazy var persistentContainer: NSPersistentContainer = {
         
         let container = NSPersistentContainer(name: "EasyShop")

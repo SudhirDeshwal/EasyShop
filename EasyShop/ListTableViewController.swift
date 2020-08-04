@@ -54,7 +54,7 @@ class ListTableViewController: UITableViewController {
     //for search bar
       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
               print(searchBar.text ?? "")
-              allDBUsers = dbManager.SearchItem(name: searchBar.text!)
+        allDBUsers = dbManager.SearchItem(name: searchBar.text!)
               self.tableView.reloadData()
     
           }
