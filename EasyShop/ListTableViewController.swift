@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListTableViewController: UITableViewController {
+class ListTableViewController: UITableViewController ,UISearchBarDelegate {
     
 
    var dbManager = CDManager()
@@ -26,7 +26,6 @@ class ListTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         allDBUsers = dbManager.fetchItems()
         self.tableView.reloadData()
-        
         
     }
     
@@ -51,14 +50,15 @@ class ListTableViewController: UITableViewController {
 
            return cell
        }
+    
+
     //for search bar
       func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
               print(searchBar.text ?? "")
-        allDBUsers = dbManager.SearchItem(name: searchBar.text!)
+        allDBUsers = dbManager.fetchUser(name: searchBar.text!)
               self.tableView.reloadData()
     
           }
-    
     
 
     
