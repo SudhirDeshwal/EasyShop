@@ -13,11 +13,12 @@ class CDManager {
     
     
     // for save item
-    func saveItem(name: String, quantity: String){
+    func saveItem(name: String, quantity: String , cat : Category){
         let newItem = Item(context: persistentContainer.viewContext)
         
         newItem.name = name
         newItem.quantity = quantity
+        newItem.parentCategory = cat
         
         saveContext()
     }
@@ -38,7 +39,7 @@ class CDManager {
    
     //for filter in search bar
     
-      func fetchUser(name: String) -> [Item]{
+      func SearchItem(name: String) -> [Item]{
            let fetch: NSFetchRequest = Item.fetchRequest()
            
            let predicate = NSPredicate(format: "name BEGINSWITH[c] %@", name)
