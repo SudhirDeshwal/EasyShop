@@ -10,6 +10,8 @@
 		993BA98124D9459D004EF683 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98024D9459D004EF683 /* ListTableViewController.swift */; };
 		993BA98324D94BC8004EF683 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98224D94BC8004EF683 /* CategoryTableViewController.swift */; };
 		993BA98924D95618004EF683 /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98824D95618004EF683 /* CDManager.swift */; };
+		99E1950B24E44C9300424477 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E1950A24E44C9300424477 /* ResultViewController.swift */; };
+		99E1950D24E44CF300424477 /* BillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E1950C24E44CF300424477 /* BillItem.swift */; };
 		99FA3A5324D8F02600F47152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA3A5224D8F02600F47152 /* AppDelegate.swift */; };
 		99FA3A5524D8F02600F47152 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA3A5424D8F02600F47152 /* SceneDelegate.swift */; };
 		99FA3A5A24D8F02600F47152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99FA3A5824D8F02600F47152 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		993BA98024D9459D004EF683 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		993BA98224D94BC8004EF683 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		993BA98824D95618004EF683 /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
+		99E1950A24E44C9300424477 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		99E1950C24E44CF300424477 /* BillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillItem.swift; sourceTree = "<group>"; };
 		99FA3A4F24D8F02600F47152 /* EasyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FA3A5224D8F02600F47152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99FA3A5424D8F02600F47152 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				99FA3A5124D8F02600F47152 /* EasyShop */,
-				99FA3A6B24D8F02700F47152 /* EasyShopTests */,
 				99FA3A7624D8F02700F47152 /* EasyShopUITests */,
 				99FA3A5024D8F02600F47152 /* Products */,
 			);
@@ -123,6 +126,9 @@
 				99FA3A5B24D8F02600F47152 /* EasyShop.xcdatamodeld */,
 				993BA98024D9459D004EF683 /* ListTableViewController.swift */,
 				993BA98224D94BC8004EF683 /* CategoryTableViewController.swift */,
+				99E1950A24E44C9300424477 /* ResultViewController.swift */,
+				99E1950C24E44CF300424477 /* BillItem.swift */,
+				99FA3A6B24D8F02700F47152 /* EasyShopTests */,
 			);
 			path = EasyShop;
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 			files = (
 				99FA3A5D24D8F02600F47152 /* EasyShop.xcdatamodeld in Sources */,
 				99FA3A5324D8F02600F47152 /* AppDelegate.swift in Sources */,
+				99E1950B24E44C9300424477 /* ResultViewController.swift in Sources */,
+				99E1950D24E44CF300424477 /* BillItem.swift in Sources */,
 				993BA98324D94BC8004EF683 /* CategoryTableViewController.swift in Sources */,
 				993BA98924D95618004EF683 /* CDManager.swift in Sources */,
 				993BA98124D9459D004EF683 /* ListTableViewController.swift in Sources */,

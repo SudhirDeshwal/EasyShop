@@ -14,6 +14,10 @@ class ListTableViewController: UITableViewController  {
    
         //Creating array from db class product
         var ProductArray = [Item]()
+    var billItemArray = [BillItem]()
+    
+    var totalamount : Double = 0
+    
     
       var selectedCategory : Category? {
           didSet{
@@ -34,13 +38,53 @@ class ListTableViewController: UITableViewController  {
            
        }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            
+            context.delete(ProductArray[indexPath.row])
+            ProductArray.remove(at: indexPath.row)
+            
+            tableView.reloadData()
+        }
+    
+        
+    }
+    
+   
+    
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           let vc  = segue.destination as! ResultViewController
+        vc.billitemArrayResult = self.billItemArray
+       }
     
     
     
-    
-    
-    
-    
+    @IBAction func myDonebtn(_ sender: UIBarButtonItem) {
+        
+        
+        for p in ProductArray {
+            
+            if p.status == true {
+                var item = BillItem()
+                item.itemName = p.name!
+                item.itemQantity = Int(p.quantity!)
+                billItemArray.append(item)
+            }
+                
+            
+        }
+        
+        performSegue(withIdentifier: "list", sender: self)
+        
+//        let alert = UIAlertController(title: "Total", message: "\(totalamount)", preferredStyle: UIAlertController.Style.alert)
+//        alert.addAction(UIAlertAction(title: "Okay!", style: UIAlertAction.Style.default, handler: nil))
+//        self.present(alert, animated: true, completion: nil)
+        
+        
+        
+        
+        
+    }
     
     
         // MARK: - Table view data source
@@ -53,18 +97,59 @@ class ListTableViewController: UITableViewController  {
     
     
      override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                        
-        ProductArray[indexPath.row].status = !ProductArray[indexPath.row].status
-
-            saveItems()
+        
+        
+        
+        let alert = UIAlertController(title: "Add Product Price", message: "", preferredStyle: .alert)
+        
+        alert.addTextField()
+        
+        
+        
+        alert.textFields![0].placeholder = "Enter Price"
+        alert.textFields![0].keyboardType = UIKeyboardType.decimalPad
+        
+    
+        alert.addAction(UIAlertAction(title: "Enter Price", style: .default , handler:{(action) in
+            self.totalamount += (Double(alert.textFields![0].text!)! * Double(self.ProductArray[indexPath.row].quantity!)!)
             
-            tableView.deselectRow(at: indexPath, animated: true)
+            for p in self.billItemArray{
+                
+                if p.itemName == self.ProductArray[indexPath.row].name{
+                    p.price = (Double(alert.textFields![0].text!))!
+                    
+                }
+            }
+        
+
+        }))
+        
+        self.present(alert, animated: true)
+        
+                        
+       ProductArray[indexPath.row].status = !ProductArray[indexPath.row].status
+        saveItems()
+        var temp : Item?
+        
+      //  temp = ProductArray[indexPath.row]
+        temp = ProductArray.remove(at: indexPath.row)
+        
+    //    ProductArray[indexPath.row] =  ProductArray[ProductArray.count-1]
+    //    ProductArray[ProductArray.count-1] = temp!
+        ProductArray.append(temp!)
+        
+        
+        
+        
+        
+        print("\(ProductArray[indexPath.row])")
+          //  saveItems()
+            
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        tableView.reloadData()
             
         }
-    
-    
-
-    
     
          //conf the cell with items from array
          override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
