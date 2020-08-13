@@ -36,6 +36,8 @@ class CategoryTableViewController: UITableViewController {
         
         cell.textLabel?.text = categories[indexPath.row].categoryname
         
+        cell.contentView.layer.cornerRadius = (cell.contentView.frame.height)/2
+
         return cell
         
     }

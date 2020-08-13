@@ -10,8 +10,15 @@
         <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="items" inverseEntity="Category"/>
     </entity>
+    <entity name="Login" representedClassName="Login" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="Category" positionX="-129" positionY="-351" width="128" height="73"/>
         <element name="Item" positionX="55" positionY="-502" width="128" height="103"/>
+        <element name="Login" positionX="-36" positionY="-405" width="128" height="103"/>
     </elements>
 </model>

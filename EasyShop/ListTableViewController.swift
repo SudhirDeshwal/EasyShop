@@ -52,33 +52,33 @@ class ListTableViewController: UITableViewController  {
     
    
     
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           let vc  = segue.destination as! ResultViewController
-        vc.billitemArrayResult = self.billItemArray
-       }
+//     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//           let vc  = segue.destination as! ResultViewController
+//        vc.billitemArrayResult = self.billItemArray
+//       }
     
     
     
     @IBAction func myDonebtn(_ sender: UIBarButtonItem) {
         
         
-        for p in ProductArray {
-            
-            if p.status == true {
-                var item = BillItem()
-                item.itemName = p.name!
-                item.itemQantity = Int(p.quantity!)
-                billItemArray.append(item)
-            }
-                
-            
-        }
+//        for p in ProductArray {
+//
+//            if p.status == true {
+//                var item = BillItem()
+//                item.itemName = p.name!
+//                item.itemQantity = Int(p.quantity!)
+//                billItemArray.append(item)
+//            }
+//
+//
+//        }
+//
+//        performSegue(withIdentifier: "billSegue", sender: self)
         
-        performSegue(withIdentifier: "list", sender: self)
-        
-//        let alert = UIAlertController(title: "Total", message: "\(totalamount)", preferredStyle: UIAlertController.Style.alert)
-//        alert.addAction(UIAlertAction(title: "Okay!", style: UIAlertAction.Style.default, handler: nil))
-//        self.present(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: "Total", message: "\(totalamount)", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Okay!", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
         
         
         
@@ -113,13 +113,13 @@ class ListTableViewController: UITableViewController  {
         alert.addAction(UIAlertAction(title: "Enter Price", style: .default , handler:{(action) in
             self.totalamount += (Double(alert.textFields![0].text!)! * Double(self.ProductArray[indexPath.row].quantity!)!)
             
-            for p in self.billItemArray{
-                
-                if p.itemName == self.ProductArray[indexPath.row].name{
-                    p.price = (Double(alert.textFields![0].text!))!
-                    
-                }
-            }
+//            for p in self.billItemArray{
+//
+//                if p.itemName == self.ProductArray[indexPath.row].name{
+//                    p.price = (Double(alert.textFields![0].text!))!
+//
+//                }
+//            }
         
 
         }))
@@ -138,11 +138,7 @@ class ListTableViewController: UITableViewController  {
     //    ProductArray[ProductArray.count-1] = temp!
         ProductArray.append(temp!)
         
-        
-        
-        
-        
-        print("\(ProductArray[indexPath.row])")
+        //print("\(ProductArray[indexPath.row])")
           //  saveItems()
             
         tableView.deselectRow(at: indexPath, animated: true)
@@ -162,6 +158,7 @@ class ListTableViewController: UITableViewController  {
         //  cell.textLabel?.text = product.quantity
             
             //  let cell = tableView.dequeueReusableCell(withIdentifier: "listcell", for: indexPath)
+            
                     cell.textLabel?.text = ProductArray[indexPath.row].name
                         cell.detailTextLabel!.text = ProductArray[indexPath.row].quantity
             

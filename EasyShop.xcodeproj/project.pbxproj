@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		391125A724E50F9D009E3AC2 /* DisplayProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391125A624E50F9D009E3AC2 /* DisplayProfileTableViewController.swift */; };
+		391125A924E530F5009E3AC2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391125A824E530F5009E3AC2 /* HomeViewController.swift */; };
+		392CA9DB24E50CAD00D00EB5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392CA9DA24E50CAD00D00EB5 /* SignUpViewController.swift */; };
+		392CA9DD24E50D0B00D00EB5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392CA9DC24E50D0B00D00EB5 /* LoginViewController.swift */; };
 		993BA98124D9459D004EF683 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98024D9459D004EF683 /* ListTableViewController.swift */; };
 		993BA98324D94BC8004EF683 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98224D94BC8004EF683 /* CategoryTableViewController.swift */; };
 		993BA98924D95618004EF683 /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993BA98824D95618004EF683 /* CDManager.swift */; };
+		99790BF924E5488F00EAD4EB /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99790BF824E5488F00EAD4EB /* SplashViewController.swift */; };
+		99790BFB24E548AD00EAD4EB /* WalkOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99790BFA24E548AD00EAD4EB /* WalkOneViewController.swift */; };
+		99790BFD24E548CD00EAD4EB /* WalktwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99790BFC24E548CD00EAD4EB /* WalktwoViewController.swift */; };
+		99790BFF24E5493600EAD4EB /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99790BFE24E5493600EAD4EB /* AuthViewController.swift */; };
 		99E1950B24E44C9300424477 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E1950A24E44C9300424477 /* ResultViewController.swift */; };
 		99E1950D24E44CF300424477 /* BillItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E1950C24E44CF300424477 /* BillItem.swift */; };
 		99FA3A5324D8F02600F47152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FA3A5224D8F02600F47152 /* AppDelegate.swift */; };
@@ -40,9 +48,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		391125A624E50F9D009E3AC2 /* DisplayProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProfileTableViewController.swift; sourceTree = "<group>"; };
+		391125A824E530F5009E3AC2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		392CA9DA24E50CAD00D00EB5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		392CA9DC24E50D0B00D00EB5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		993BA98024D9459D004EF683 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		993BA98224D94BC8004EF683 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		993BA98824D95618004EF683 /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
+		99790BF824E5488F00EAD4EB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		99790BFA24E548AD00EAD4EB /* WalkOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkOneViewController.swift; sourceTree = "<group>"; };
+		99790BFC24E548CD00EAD4EB /* WalktwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalktwoViewController.swift; sourceTree = "<group>"; };
+		99790BFE24E5493600EAD4EB /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		99E1950A24E44C9300424477 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		99E1950C24E44CF300424477 /* BillItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillItem.swift; sourceTree = "<group>"; };
 		99FA3A4F24D8F02600F47152 /* EasyShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +144,14 @@
 				993BA98224D94BC8004EF683 /* CategoryTableViewController.swift */,
 				99E1950A24E44C9300424477 /* ResultViewController.swift */,
 				99E1950C24E44CF300424477 /* BillItem.swift */,
+				392CA9DC24E50D0B00D00EB5 /* LoginViewController.swift */,
+				391125A624E50F9D009E3AC2 /* DisplayProfileTableViewController.swift */,
+				391125A824E530F5009E3AC2 /* HomeViewController.swift */,
+				99790BF824E5488F00EAD4EB /* SplashViewController.swift */,
+				99790BFA24E548AD00EAD4EB /* WalkOneViewController.swift */,
+				99790BFC24E548CD00EAD4EB /* WalktwoViewController.swift */,
+				99790BFE24E5493600EAD4EB /* AuthViewController.swift */,
+				392CA9DA24E50CAD00D00EB5 /* SignUpViewController.swift */,
 				99FA3A6B24D8F02700F47152 /* EasyShopTests */,
 			);
 			path = EasyShop;
@@ -285,11 +309,19 @@
 				99FA3A5D24D8F02600F47152 /* EasyShop.xcdatamodeld in Sources */,
 				99FA3A5324D8F02600F47152 /* AppDelegate.swift in Sources */,
 				99E1950B24E44C9300424477 /* ResultViewController.swift in Sources */,
+				391125A724E50F9D009E3AC2 /* DisplayProfileTableViewController.swift in Sources */,
+				99790BFF24E5493600EAD4EB /* AuthViewController.swift in Sources */,
 				99E1950D24E44CF300424477 /* BillItem.swift in Sources */,
 				993BA98324D94BC8004EF683 /* CategoryTableViewController.swift in Sources */,
+				99790BF924E5488F00EAD4EB /* SplashViewController.swift in Sources */,
+				99790BFD24E548CD00EAD4EB /* WalktwoViewController.swift in Sources */,
 				993BA98924D95618004EF683 /* CDManager.swift in Sources */,
+				392CA9DB24E50CAD00D00EB5 /* SignUpViewController.swift in Sources */,
 				993BA98124D9459D004EF683 /* ListTableViewController.swift in Sources */,
+				99790BFB24E548AD00EAD4EB /* WalkOneViewController.swift in Sources */,
+				392CA9DD24E50D0B00D00EB5 /* LoginViewController.swift in Sources */,
 				99FA3A5524D8F02600F47152 /* SceneDelegate.swift in Sources */,
+				391125A924E530F5009E3AC2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
